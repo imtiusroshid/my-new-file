@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.main1{
+    background: orange;
+    padding: 20px;
+    border-radius: 30px;
+
+
+}
+
+@media only screen and (max-width: 810px) {
+    .main{
+        grid-template-columns: 1fr 1fr ;
+        color: green;
+        text5{
+            color: blue;
+            
+        }
+        
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        .main{
+            grid-template-columns: 1fr ;
+            color: red;
+            
+        }
+        .main, .main1, .text2{
+            color: green !important;
+            
+        }
+        
+      }
